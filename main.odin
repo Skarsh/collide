@@ -2,6 +2,8 @@ package main
 
 import rl "vendor:raylib"
 
+import "gjk"
+
 Environment :: struct {}
 
 Sim :: struct {
@@ -32,6 +34,11 @@ main :: proc() {
 			zoom = 1,
 		},
 		environment = environment,
+	}
+
+	square := gjk.Polygon {
+		pos      = {0, 0},
+		vertices = {{-1, -1}, {1, -1}, {1, 1}, {-1, 1}},
 	}
 
 	for !rl.WindowShouldClose() {
