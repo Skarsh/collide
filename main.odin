@@ -16,7 +16,7 @@ INITIAL_HEIGHT :: 600
 
 main :: proc() {
 
-	rl.InitWindow(INITIAL_WIDTH, INITIAL_HEIGHT, "Pathfinding experiments")
+	rl.InitWindow(INITIAL_WIDTH, INITIAL_HEIGHT, "Collide")
 	rl.SetWindowState({.WINDOW_RESIZABLE})
 	rl.SetTargetFPS(60)
 
